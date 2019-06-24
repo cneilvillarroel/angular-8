@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+<ul>
+	<li *ngFor="let pagina of paginas">
+		<a [routerLink]="pagina.url">{{ pagina.texto }}</a>
+	</li>
+
+</ul>
+
+<router-outlet></router-outlet>
